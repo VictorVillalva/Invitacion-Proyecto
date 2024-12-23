@@ -24,7 +24,7 @@ function CardSalon() {
         <div className="flex flex-col items-center gap-4">
             <div className="flex flex-col items-center text-neutrals-100">
                 <p className="text-[20px]">Salón</p>
-                <p className="font-bold text-[48px]">Lucia</p>
+                <p className="font-bold text-[48px]">Luzcina</p>
             </div>
             <Carousel className="w-full">
                 <CarouselContent>
