@@ -25,7 +25,10 @@ function CounterDown() {
                 setPartyTime(true)
             }
         }, 1000)
+        console.log(interval)
     }, [])
+
+    console.log(partyTime)
     return ( 
         <div className="flex flex-row w-full gap-2 p-2">
             <div className="flex flex-col w-full gap-[6px] p-1 bg-[#CBA836] rounded text-neutrals-100">
