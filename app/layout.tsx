@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from "@/ui/font";
-import { bg } from "@/ui/assets/images/Bg-preinvitacion.png"
 
 export const metadata: Metadata = {
   title: "Invitacion Virtual",
