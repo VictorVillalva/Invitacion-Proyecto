@@ -72,7 +72,10 @@ export default {
           lg: 'var(--radius)',
           md: 'calc(var(--radius) - 2px)',
           sm: 'calc(var(--radius) - 4px)'
-        }
+        },
+        backgroundImage: {
+          'bg-pre': "url('@/ui/assets/images/Bg-preinvitacion.png')"
+        },
       }
   },
   plugins: [require("tailwindcss-animate")],
