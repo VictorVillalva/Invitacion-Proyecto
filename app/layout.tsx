@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from "@/ui/font";
+import { bg } from "@/ui/assets/images/Bg-preinvitacion.png"
 
 export const metadata: Metadata = {
   title: "Invitacion Virtual",
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased bg-primary-400`}>
+      <body className={`${inter.className} antialiased bg-bg-pre bg-cover bg-center`}>
         {children}
       </body>
     </html>

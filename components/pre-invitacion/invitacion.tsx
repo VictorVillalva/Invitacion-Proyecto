@@ -18,10 +18,23 @@ import {
 
 } from "@/components/ui/carousel"
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
+import CounterDown from '../ui/counterdown';
+
 function Invitacion() {
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once:false,
+        })
+
+    }, [])
+
     return (
         <div className="flex flex-col gap-[80px]">
-            <div className='w-full flex flex-col justify-center items-center'>
+            <div className='w-full flex flex-col justify-center items-center' data-aos="fade-down">
                 <Image
                     src={XvPortada}
                     alt="XV"
@@ -29,7 +42,7 @@ function Invitacion() {
                     // height={500} automatically provided
                 />
             </div>
-            <div className='flex flex-col gap-[233px]'>                
+            <div className='flex flex-col gap-[233px]' data-aos="fade-down">                
                 <div className='w-full flex flex-col justify-center items-center text-neutrals-200'>
                     <p className='font-extralight text-[20px]'>Aparta la fecha</p>
                     <h2 className='font-semibold text-2xl'>6 de Septiembre del 2025</h2>
@@ -38,20 +51,21 @@ function Invitacion() {
                     <p className='italic text-center text-[20px]'>Dicen que los momentos más felices se comparten con quienes más queremos. Por eso, quiero que me acompañes en uno de los días más importantes de mi vida.</p>
                 </div>
             </div>
-            <hr  className='bg-neutrals-100'/>
-            <div className='contador flex flex-col items-center'>
+            <hr  className='bg-neutrals-100' data-aos="fade-down"/>
+            <div className='contador flex flex-col items-center gap-[40px]' data-aos="fade-down">
                 <p className='font-semibold text-[32px] text-center text-neutrals-100'>¡Días restantes para el gran dia!</p>
+                <CounterDown />
             </div>
-            <hr  className='bg-neutrals-100'/>
-            <div className='flex flex-col items-center text-neutrals-100 gap-4'>
+            <hr  className='bg-neutrals-100' data-aos="fade-down"/>
+            <div className='flex flex-col items-center text-neutrals-100 gap-4' data-aos="fade-down">
                 <CardSalon />
                 <div className='text-neutrals-300 flex flex-row'>
                     <Location height='24' width='24'/>
                     <Link href={'https://maps.app.goo.gl/CpJ4H3AD8HFbJYnK6'} className='font-light text-center'>Av. 5 de Mayo 1400, San Juan Aquiahuac, 72810 San Andrés Cholula, Pue.</Link>
                 </div>
             </div>
-            <hr  className='bg-neutrals-100'/>
-            <div className="flex flex-col gap-[180px]">                
+            <hr  className='bg-neutrals-100' data-aos="fade-down"/>
+            <div className="flex flex-col gap-[180px]" data-aos="fade-down">                
                 <div className='flex flex-col items-center gap-5'>
                     <p className='text-[20px] font-normal text-neutrals-100'>Sugerencia de hospedaje</p>
                     <Carousel className="w-full">
@@ -102,8 +116,8 @@ function Invitacion() {
                     </Carousel>
                 </div>
             </div>
-            <hr  className='bg-neutrals-100'/>
-            <div className="flex flex-col items-center gap-4">                
+            <hr  className='bg-neutrals-100' data-aos="fade-down"/>
+            <div className="flex flex-col items-center gap-4" data-aos="fade-down">                
                 <p className='font-semibold text-[20px] text-neutrals-100 text-center'> Te invitamos a reservar tu fecha para este evento inolvidable espera la invitación oficial.</p>
                 <Image
                     src={LogoXV}
