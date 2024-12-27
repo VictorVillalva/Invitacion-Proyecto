@@ -8,9 +8,7 @@ import Link from 'next/link';
 import CardHotel from '../cardHotel';
 import CardHotelConvenio from '../cardHotelConvenio';
 import Hotel2 from '@/ui/assets/images/Hotel2.jpg'
-import ZonaArqueologicaPiramides from '@/ui/assets/images/ZonaArqueologicaPiramides.jpg'
-import EstrellaPuebla from '@/ui/assets/images/EstrellaPuebla.jpg'
-import Valquiro from '@/ui/assets/images/Valquiro.jpg'
+
 import {
     Carousel,
     CarouselContent,
