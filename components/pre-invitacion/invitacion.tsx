@@ -84,37 +84,6 @@ function Invitacion() {
                         </CarouselContent>
                     </Carousel>
                 </div>
-                <div className='flex flex-col items-center gap-5'>
-                    <p className='text-[20px] font-normal text-neutrals-100'>Sugerencia de Actividades</p>
-                    <Carousel className="w-full">
-                        <CarouselContent>
-                            <CarouselItem >
-                                <CardHotel 
-                                    nameHotel='Zona Arqueológica de Cholula'
-                                    img={ZonaArqueologicaPiramides}
-                                    locationUrl='https://maps.app.goo.gl/pYkqBiJkVbF3ZYWh8'
-                                    location='C. 14 Pte. S/N, San Miguel, Zona Arqueológica San Andrés Cholula, 72810 San Andrés Cholula, Pue.'
-                                />
-                            </CarouselItem>
-                            <CarouselItem >
-                                <CardHotel 
-                                    nameHotel='Estrella de Puebla'
-                                    img={EstrellaPuebla}
-                                    locationUrl='https://maps.app.goo.gl/KNispAvS4QPNGHFY6'
-                                    location='4 south No 106, C. 4 Sur 106, Centro, 72760 Puebla, Pue.'
-                                />
-                            </CarouselItem>
-                            <CarouselItem >
-                                <CardHotel 
-                                    nameHotel="Val'Quirico"
-                                    img={Valquiro}
-                                    locationUrl='https://maps.app.goo.gl/26jHNYj1WjQ92wtu7'
-                                    location='Carretera Santa Isabel Tetlatauca, km 2, 90710 San Miguel Xoxtla, Tlax.'
-                                />
-                            </CarouselItem>
-                        </CarouselContent>
-                    </Carousel>
-                </div>
             </div>
             <hr  className='bg-neutrals-100' data-aos="fade-down"/>
             <div className="flex flex-col items-center gap-4" data-aos="fade-down">                
