@@ -27,27 +27,32 @@ function CounterDown() {
         }, 1000)
         console.log(interval)
     }, [])
-
-    console.log(partyTime)
     return ( 
         <div className="flex flex-row w-full gap-2 p-2">
-            <div className="flex flex-col w-full gap-[6px] p-1 bg-[#CBA836] rounded text-neutrals-100">
-                <span className="text-[32px] font-bold text-center">{days}</span>
-                <span className="text-center text-[16px]">Dias</span>
-            </div>
-            <div className="flex flex-col w-full gap-[6px] p-1 bg-[#CBA836] rounded text-neutrals-100">
-                <span className="text-[32px] w-full font-bold text-center">{hours}</span>
-                <span className="text-center text-[16px]">Horas</span>
-            </div>
-            <div className="flex flex-col w-full gap-[6px] p-1 bg-[#CBA836] rounded text-neutrals-100">
-                <span className="text-[32px] font-bold text-center">{minutes}</span>
-                <span className="text-center text-[16px]">Min.</span>
-            </div>
-            <div className="flex flex-col w-full gap-[6px] p-1 bg-[#CBA836] rounded text-neutrals-100">
-                <span className="text-[32px] font-bold text-center">{seconds}</span>
-                <span className="text-center text-[16px]">Seg.</span>
-            </div>
-            
+            {partyTime ? (
+                <div className="w-full p-4 text-center bg-[#CBA836] rounded">
+                    <h2 className="text-3xl font-bold text-neutrals-100">¡Ya es hora de la fiesta! 🎉</h2>
+                </div>
+            ) : (
+                <>
+                    <div className="flex flex-col w-full gap-[6px] p-1 bg-[#CBA836] rounded text-neutrals-100">
+                        <span className="text-[32px] font-bold text-center">{days}</span>
+                        <span className="text-center text-[16px]">Dias</span>
+                    </div>
+                    <div className="flex flex-col w-full gap-[6px] p-1 bg-[#CBA836] rounded text-neutrals-100">
+                        <span className="text-[32px] w-full font-bold text-center">{hours}</span>
+                        <span className="text-center text-[16px]">Horas</span>
+                    </div>
+                    <div className="flex flex-col w-full gap-[6px] p-1 bg-[#CBA836] rounded text-neutrals-100">
+                        <span className="text-[32px] font-bold text-center">{minutes}</span>
+                        <span className="text-center text-[16px]">Min.</span>
+                    </div>
+                    <div className="flex flex-col w-full gap-[6px] p-1 bg-[#CBA836] rounded text-neutrals-100">
+                        <span className="text-[32px] font-bold text-center">{seconds}</span>
+                        <span className="text-center text-[16px]">Seg.</span>
+                    </div>
+                </>
+            )}
         </div>
     );
 }
