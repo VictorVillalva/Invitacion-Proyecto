@@ -9,13 +9,6 @@ import CardHotel from '../cardHotel';
 import CardHotelConvenio from '../cardHotelConvenio';
 import Hotel2 from '@/ui/assets/images/Hotel2.jpg'
 
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-
-} from "@/components/ui/carousel"
-
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
@@ -66,21 +59,15 @@ function Invitacion() {
             <div className="flex flex-col gap-[180px]" data-aos="fade-down">                
                 <div className='flex flex-col items-center gap-5'>
                     <p className='text-[20px] font-normal text-neutrals-100'>Sugerencia de hospedaje</p>
-                    <Carousel className="w-full">
-                        <CarouselContent>
-                            <CarouselItem >
-                                <CardHotelConvenio />
-                            </CarouselItem>
-                            <CarouselItem >
-                                <CardHotel 
+                    <div className="flex flex-col gap-8">
+                        <CardHotelConvenio />
+                        <CardHotel 
                                     nameHotel='Hotel Xelhua'
                                     img={Hotel2}
                                     locationUrl='https://maps.app.goo.gl/QDB5wNSGhT36uN9N6'
                                     location='4 south No 106, C. 4 Sur 106, Centro, 72760 Puebla, Pue.'
                                 />
-                            </CarouselItem>
-                        </CarouselContent>
-                    </Carousel>
+                    </div>
                 </div>
             </div>
             <hr  className='bg-neutrals-100' data-aos="fade-down"/>
