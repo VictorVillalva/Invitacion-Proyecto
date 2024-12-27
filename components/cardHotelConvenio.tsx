@@ -42,7 +42,7 @@ function CardHotelConvenio() {
                                     <span className="font-semibold text-primary-400 text-xs">* Evento:  XV años Daniela Medel  </span>
                                     </li>
                                     <li className="flex items-center">
-                                    <span className="font-semibold text-primary-400 text-xs">* Fecha:  6 de septiembre de 2024 </span>
+                                    <span className="font-semibold text-primary-400 text-xs">* Fecha:  6 de septiembre de 2025 </span>
                                     </li> 
                                     <li className="flex items-center">
                                     <span className="font-semibold text-primary-400 text-xs">* Salón: Luzcina </span>
